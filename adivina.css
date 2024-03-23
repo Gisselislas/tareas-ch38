@@ -1,0 +1,29 @@
+
+body {
+    background-image: url(./6489091.jpg);
+    image-rendering: auto;
+    margin-bottom: 50px;
+    background-size: cover;
+}
+#textBox {
+    
+    color: whitesmoke;
+    margin-top: 50px;
+
+}
+
+
+*{
+    font-family: "", system-ui; 
+    text-align: center;
+    margin-top: 50px;
+} 
+
+#saludoInicial {
+    font-size: 600px;
+    margin-bottom: 20px;
+    transition: color white;
+}
+div.btn {
+    font-size: 20px;
+}

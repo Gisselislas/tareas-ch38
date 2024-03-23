@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./adivina.css">
+    <h2 class="container-fluid" id="textBox">¡Piensa en un número del 1 al 100!</h2>
+    <title>Madame Zazu Adivina tu número</title>
+    
+</head>
+
+<body>
+    
+    <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+        <div id="mainRow" class="row d-flex align-content-center">
+            <div class="col-lg-12 text-center">
+
+            </div>
+            <div class=" mt-auto text-center" >
+                <p style="visibility: hidden;"><span id="minValue">1</span><span id="maxValue">100</span></p>
+
+                <div class=" col-12 align-content-center btn-light">
+                    <button 
+                    onclick="numberIsLarger()"
+                    id="largerNumberButton" 
+                    type="button" 
+                    class="col-10 btn btn-light tryButton" 
+                    style="visibility: hidden;">
+                    Es mayor
+                </button>
+                   
+                    <button 
+                        onclick="start()" 
+                        type="button" 
+                        class="col-10  align-content-center btn-light"
+                        id="startButton" 
+                        value="0">
+                        EMPEZAR
+                    </button>
+                    <button 
+                    onclick="numberIsSmaller()"
+                    id="smallerNumberButton"  
+                    type="button" 
+                    class="col-10  btn btn-light tryButton" 
+                    style="visibility: hidden;">
+                   Es menor
+                </button>
+   
+            </div>
+            <img id="madamezazu" src="./Captura de pantalla 2024-03-21 a la(s) 23.47.51.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./adivina.js"></script>
+</body>
+
+</html>
